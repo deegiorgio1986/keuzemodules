@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BI - Uitgesloten Keuzemodules</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              200: '#bae0fd',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#075985',
+              800: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    @media print {
+      .no-print {
+        display: none !important;
+      }
+      body {
+        background-color: white !important;
+      }
+      .print-shadow-none {
+        box-shadow: none !important;
+        border: 1px solid #e2e8f0 !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-xs">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-9 h-9 rounded-lg bg-sky-600 text-white flex items-center justify-center font-bold text-lg shadow-sm">
+          BI
+        </div>
+        <div>
+          <h1 class="text-base sm:text-lg font-bold text-slate-900 leading-tight">Opleiding Bedrijfskunde / BI</h1>
+          <p class="text-xs text-slate-500">Studieprogramma Overzicht</p>
+        </div>
+      </div>
+      
+      <div class="flex items-center space-x-2 no-print">
+        <button id="copyBtn" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-300 text-xs font-medium text-slate-700 bg-white hover:bg-slate-50 transition active:scale-95 shadow-sm">
+          <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+          </svg>
+          <span>Kopiëren</span>
+        </button>
+        <button id="printBtn" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-sky-600 text-white text-xs font-medium hover:bg-sky-700 transition active:scale-95 shadow-sm">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
+          </svg>
+          <span class="hidden sm:inline">Afdrukken</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full flex-1">
+    
+    <!-- Hero / Intro Sectie -->
+    <div class="mb-8">
+      <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-amber-50 text-amber-800 border border-amber-200 mb-3">
+        <svg class="w-3.5 h-3.5 text-amber-600" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+        </svg>
+        Belangrijke Mededeling
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
+        Uitgesloten Keuzemodules
+      </h2>
+      <p class="mt-2 text-sm sm:text-base text-slate-600 max-w-2xl">
+        Onderstaande modules zijn uitgesloten als keuzemodule voor studenten van de opleiding Bedrijfsinformatica / Bedrijfskunde. Deze vakken kunnen niet worden opgenomen in de vrije keuzeruimte.
+      </p>
+    </div>
+
+    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-4 sm:p-5 mb-6 no-print print-shadow-none">
+      <div class="flex flex-col sm:flex-row gap-4 justify-between items-center">
+        <!-- Zoekbalk -->
+        <div class="relative w-full sm:max-w-md">
+          <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </div>
+          <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Zoek een keuzemodule..." 
+            class="w-full pl-10 pr-9 py-2 rounded-lg border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 placeholder-slate-400 transition"
+          >
+          <button id="clearSearch" class="hidden absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-slate-600">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Teller & Badge -->
+        <div class="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-end">
+          <div class="text-xs sm:text-sm text-slate-500">
+            Zichtbaar: <span id="visibleCount" class="font-semibold text-slate-900">15</span> van <span id="totalCount" class="font-semibold text-slate-900">15</span>
+          </div>
+          <button id="resetFilterBtn" class="text-xs text-sky-600 hover:text-sky-800 underline hidden">
+            Herstel filter
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden print-shadow-none">
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-slate-50/80 border-b border-slate-200 text-xs font-semibold text-slate-600 uppercase tracking-wider">
+              <th scope="col" class="py-3.5 px-4 sm:px-6 w-16 text-center">#</th>
+              <th scope="col" class="py-3.5 px-4 sm:px-6">Naam Keuzemodule</th>
+              <th scope="col" class="py-3.5 px-4 sm:px-6 w-36 text-center">Status</th>
+            </tr>
+          </thead>
+          <tbody id="moduleTableBody" class="divide-y divide-slate-100 text-sm">
+            <!-- Rijen worden via JavaScript geïnjecteerd voor optimale dynamiek -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Lege staat bij geen resultaten -->
+      <div id="noResults" class="hidden py-12 px-4 text-center">
+        <svg class="mx-auto h-10 w-10 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <p class="mt-3 text-sm font-medium text-slate-700">Geen modules gevonden</p>
+        <p class="text-xs text-slate-400 mt-1">Probeer een andere zoekterm.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-500">
+    <div class="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+      <span>Bron: BI uitgesloten keuzemodules</span>
+      <span>Bijgewerkt conform actuele studiegids</span>
+    </div>
+  </footer>
+
+  <!-- Toast Notificatie (geen native alert) -->
+  <div id="toast" class="fixed bottom-6 right-6 bg-slate-900 text-white text-xs sm:text-sm py-2.5 px-4 rounded-lg shadow-lg opacity-0 pointer-events-none transition-all duration-300 transform translate-y-2 flex items-center gap-2 z-50">
+    <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+    </svg>
+    <span id="toastMessage">Lijst gekopieerd naar klembord!</span>
+  </div>
+
+  <script>
+    // Modules dataset direct overgenomen uit het bronbestand
+    const modules = [
+      "Aanbesteden en inkopen in de duurzaam gebouwde omgeving",
+      "Check Reality & Change Perspectives",
+      "Chemie van ziektes, diagnostiek en medicijnen",
+      "Circulariteit in de gebouwde omgeving",
+      "Creëren & experimenteren in de gebouwde omgeving",
+      "CSI in de praktijk",
+      "Data Driven Design in de duurzaam gebouwde omgeving",
+      "Industriele robotcel",
+      "Ingenieursbureau",
+      "Innovatie voor Business",
+      "Mee-werk-stage Engineering",
+      "Projectmanagement in de duurzaam gebouwde omgeving",
+      "Robot challenge",
+      "Scientific Minds",
+      "Stop Making Sense & Play with your Senses"
+    ];
+
+    const tableBody = document.getElementById('moduleTableBody');
+    const searchInput = document.getElementById('searchInput');
+    const clearSearch = document.getElementById('clearSearch');
+    const visibleCount = document.getElementById('visibleCount');
+    const totalCount = document.getElementById('totalCount');
+    const noResults = document.getElementById('noResults');
+    const resetFilterBtn = document.getElementById('resetFilterBtn');
+    const copyBtn = document.getElementById('copyBtn');
+    const printBtn = document.getElementById('printBtn');
+    const toast = document.getElementById('toast');
+    const toastMessage = document.getElementById('toastMessage');
+
+    totalCount.textContent = modules.length;
+
+    // Toast melding helper
+    let toastTimeout;
+    function showToast(msg) {
+      toastMessage.textContent = msg;
+      toast.classList.remove('opacity-0', 'translate-y-2', 'pointer-events-none');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'translate-y-2', 'pointer-events-none');
+      }, 2500);
+    }
+
+    function renderModules(filter = '') {
+      tableBody.innerHTML = '';
+      const term = filter.trim().toLowerCase();
+      
+      const filtered = modules.filter(m => m.toLowerCase().includes(term));
+      visibleCount.textContent = filtered.length;
+
+      if (filtered.length === 0) {
+        noResults.classList.remove('hidden');
+      } else {
+        noResults.classList.add('hidden');
+      }
+
+      filtered.forEach((moduleName, index) => {
+        const row = document.createElement('tr');
+        row.className = 'hover:bg-slate-50/70 transition-colors group';
+
+        // Vind de originele index voor correct nummerbehoud
+        const originalIndex = modules.indexOf(moduleName) + 1;
+
+        // Highlight matching tekst
+        let highlightedName = moduleName;
+        if (term) {
+          const regex = new RegExp(`(${term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+          highlightedName = moduleName.replace(regex, '<mark class="bg-amber-100 text-amber-900 rounded px-0.5">$1</mark>');
+        }
+
+        row.innerHTML = `
+          <td class="py-3 px-4 sm:px-6 text-center text-xs font-mono text-slate-400 group-hover:text-slate-600">
+            ${String(originalIndex).padStart(2, '0')}
+          </td>
+          <td class="py-3 px-4 sm:px-6 font-medium text-slate-800">
+            ${highlightedName}
+          </td>
+          <td class="py-3 px-4 sm:px-6 text-center">
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-rose-50 text-rose-700 border border-rose-150 border-rose-200">
+              Uitgesloten
+            </span>
+          </td>
+        `;
+        tableBody.appendChild(row);
+      });
+
+      // Toon/verberg duidelijke knop en reset knop
+      if (term.length > 0) {
+        clearSearch.classList.remove('hidden');
+        resetFilterBtn.classList.remove('hidden');
+      } else {
+        clearSearch.classList.add('hidden');
+        resetFilterBtn.classList.add('hidden');
+      }
+    }
+
+    searchInput.addEventListener('input', (e) => {
+      renderModules(e.target.value);
+    });
+
+    clearSearch.addEventListener('click', () => {
+      searchInput.value = '';
+      renderModules('');
+      searchInput.focus();
+    });
+
+    resetFilterBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      renderModules('');
+    });
+
+    // Klembord kopieeractie via execCommand i.v.m. iframe-compatibiliteit
+    copyBtn.addEventListener('click', () => {
+      const activeFilter = searchInput.value.trim().toLowerCase();
+      const currentList = modules.filter(m => m.toLowerCase().includes(activeFilter));
+      
+      const textToCopy = "BI - Uitgesloten Keuzemodules:\n" + currentList.map((m, i) => `${i + 1}. ${m}`).join('\n');
+      
+      const tempTextArea = document.createElement('textarea');
+      tempTextArea.value = textToCopy;
+      tempTextArea.style.position = 'fixed';
+      tempTextArea.style.left = '-9999px';
+      document.body.appendChild(tempTextArea);
+      tempTextArea.select();
+      
+      try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+          showToast(`${currentList.length} module(s) gekopieerd!`);
+        } else {
+          showToast("Kopiëren mislukt");
+        }
+      } catch (err) {
+        showToast("Fout bij kopiëren");
+      }
+      document.body.removeChild(tempTextArea);
+    });
+
+    // Afdrukken
+    printBtn.addEventListener('click', () => {
+      window.print();
+    });
+
+    // Initiële weergave
+    renderModules();
+  </script>
+</body>
+</html>
